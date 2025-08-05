@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio 2"/>
+        <attribute name="authors" value="luis.hpsantos1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-04 09:26:46 "/>
+        <attribute name="created" value="bHVpcy5ocHNhbnRvczE7U0FOMDY3NDQwOFcxMS0xOzIwMjUtMDgtMDQ7IjA4OjE5OjM2ICI7MzQ5Mw=="/>
+        <attribute name="edited" value="bHVpcy5ocHNhbnRvczE7U0FOMDY3NDQwOFcxMS0xOzIwMjUtMDgtMDQ7IjA5OjI2OjQ2ICI7MjszNjAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeroUm" type="Integer" array="False" size=""/>
+            <declare name="numeroDois" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um valor:&quot;" newline="True"/>
+            <input variable="numeroUm"/>
+            <output expression="&quot;Digite um outro valor:&quot;" newline="True"/>
+            <input variable="pessoaDois"/>
+            <if expression="numeroUm = numeroDois">
+                <then>
+                    <output expression="&quot;S&#227;o iguais&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="numeroUm &gt; numeroDois">
+                        <then>
+                            <output expression="&quot;O primeiro n&#250;mero &#233; maior que o segundo n&#250;mero&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;O segundo n&#250;mero &#233; maior que o primeiro n&#250;mero&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

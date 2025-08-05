@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exercicio 3"/>
+        <attribute name="authors" value="luis.hpsantos1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-04 09:14:25 "/>
+        <attribute name="created" value="bHVpcy5ocHNhbnRvczE7U0FOMDY3NDQwOFcxMS0xOzIwMjUtMDgtMDQ7IjA4OjI4OjQ2ICI7MzQ5NA=="/>
+        <attribute name="edited" value="bHVpcy5ocHNhbnRvczE7U0FOMDY3NDQwOFcxMS0xOzIwMjUtMDgtMDQ7IjA5OjE0OjI1ICI7MTszNTk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nomeFuncionario" type="String" array="False" size=""/>
+            <declare name="vendas" type="Real" array="False" size=""/>
+            <declare name="comissao" type="Real" array="False" size=""/>
+            <output expression="&quot;Nome do funcion&#225;rio:&quot;" newline="True"/>
+            <input variable="nomeFuncionario"/>
+            <output expression="&quot;Valor ganho:&quot;" newline="True"/>
+            <input variable="vendas"/>
+            <assign variable="comissao" expression="vendas * 0.1"/>
+            <output expression="&quot;A comiss&#227;o do funcion&#225;rio &quot; &amp; nomeFuncionario &amp; &quot; &#233; de: &quot; &amp; comissao" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
