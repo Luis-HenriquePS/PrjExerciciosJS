@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exerc&#237;cio Extra 1"/>
+        <attribute name="authors" value="luis.hpsantos1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-06 07:49:39 "/>
+        <attribute name="created" value="bHVpcy5ocHNhbnRvczE7U0FOMDY3NDQwOFcxMS0xOzIwMjUtMDgtMDY7IjA3OjA1OjM4ICI7MzQ5MQ=="/>
+        <attribute name="edited" value="bHVpcy5ocHNhbnRvczE7U0FOMDY3NDQwOFcxMS0xOzIwMjUtMDgtMDY7IjA3OjQ5OjM5ICI7MzszNjEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vendedor" type="String" array="False" size=""/>
+            <declare name="salario" type="Real" array="False" size=""/>
+            <declare name="vendas" type="Real" array="False" size=""/>
+            <declare name="comissao" type="Real" array="False" size=""/>
+            <output expression="&quot;Nome do vendedor:&quot;" newline="True"/>
+            <input variable="vendedor"/>
+            <output expression="&quot;Valor do sal&#225;rio:&quot;" newline="True"/>
+            <input variable="salario"/>
+            <output expression="&quot;Total de vendas: &quot;" newline="True"/>
+            <input variable="vendas"/>
+            <if expression="vendas &gt; 5000">
+                <then>
+                    <assign variable="comissao" expression="vendas * 0.15"/>
+                </then>
+                <else>
+                    <if expression="vendas &gt;= 1500 &amp;&amp; vendas &lt;= 5000">
+                        <then>
+                            <assign variable="comissao" expression="vendas * 0.1"/>
+                        </then>
+                        <else>
+                            <assign variable="comissao" expression="vendas * 0.05"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Valor da comiss&#227;o + sal&#225;rio: R$ &quot; &amp; comissao + salario" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

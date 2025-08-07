@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Exerc&#237;cio Extra 2"/>
+        <attribute name="authors" value="luis.hpsantos1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-08-06 09:47:07 "/>
+        <attribute name="created" value="bHVpcy5ocHNhbnRvczE7U0FOMDY3NDQwOFcxMS0xOzIwMjUtMDgtMDY7IjA3OjQ2OjQwICI7MzQ4OQ=="/>
+        <attribute name="edited" value="bHVpcy5ocHNhbnRvczE7U0FOMDY3NDQwOFcxMS0xOzIwMjUtMDgtMDY7IjA5OjQ3OjA3ICI7MjszNjA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="SAL" type="Integer" array="False" size=""/>
+            <declare name="IR" type="Integer" array="False" size=""/>
+            <declare name="SALIQ" type="Integer" array="False" size=""/>
+            <input variable="SAL"/>
+            <input variable="IR"/>
+            <input variable="SALIQ"/>
+            <if expression="SALIQ &gt;= 100">
+                <then>
+                    <output expression="true" newline="True"/>
+                </then>
+                <else>
+                    <output expression="false" newline="True"/>
+                </else>
+            </if>
+            <input variable="SAL"/>
+            <input variable="IR"/>
+            <input variable="SALIQ"/>
+            <output expression="SAL + 20 * 4 / 2" newline="True"/>
+            <input variable="SAL"/>
+            <input variable="IR"/>
+            <input variable="SALIQ"/>
+            <output expression="(SAL+SALIQ+IR)* 0" newline="True"/>
+            <input variable="SAL"/>
+            <input variable="IR"/>
+            <input variable="SALIQ"/>
+            <if expression="(SALIQ-SAL=20) || (IR&gt;SALIQ)">
+                <then>
+                    <output expression="true" newline="True"/>
+                </then>
+                <else>
+                    <output expression="false" newline="True"/>
+                </else>
+            </if>
+            <input variable="SAL"/>
+            <input variable="IR"/>
+            <input variable="SALIQ"/>
+            <output expression="SALIQ-300/2" newline="True"/>
+            <input variable="SAL"/>
+            <input variable="IR"/>
+            <input variable="SALIQ"/>
+            <output expression="SALIQ*2+IR/2" newline="True"/>
+            <input variable="SAL"/>
+            <input variable="IR"/>
+            <input variable="SALIQ"/>
+            <if expression="!((10*10&gt;=SALIQ) || (SAL &lt;&gt; SALIQ))">
+                <then>
+                    <output expression="true" newline="True"/>
+                </then>
+                <else>
+                    <output expression="false" newline="True"/>
+                </else>
+            </if>
+            <input variable="SAL"/>
+            <input variable="IR"/>
+            <input variable="SALIQ"/>
+            <if expression="(SALIQ + 5 &gt; SAL) &amp;&amp; (SAL-5 &lt; SALIQ)">
+                <then>
+                    <output expression="true" newline="True"/>
+                </then>
+                <else>
+                    <output expression="false" newline="True"/>
+                </else>
+            </if>
+            <input variable="SAL"/>
+            <input variable="IR"/>
+            <input variable="SALIQ"/>
+            <if expression="(IR * SALIQ &gt;= SAL)">
+                <then>
+                    <output expression="true" newline="True"/>
+                </then>
+                <else>
+                    <output expression="false" newline="True"/>
+                </else>
+            </if>
+            <input variable="SAL"/>
+            <input variable="IR"/>
+            <input variable="SALIQ"/>
+            <if expression="!(IR + SALIQ = SAL)">
+                <then>
+                    <output expression="true" newline="True"/>
+                </then>
+                <else>
+                    <output expression="false" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
